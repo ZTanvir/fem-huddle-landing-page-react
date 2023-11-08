@@ -2,7 +2,7 @@ const ProductRow = ({ product }) => {
   const name = product.stocked ? (
     product.name
   ) : (
-    <span className={{ color: "red" }}>{product.name}</span>
+    <span style={{ color: "red" }}>{product.name}</span>
   );
   return (
     <tr>
