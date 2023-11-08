@@ -14,13 +14,15 @@ const ProductTable = ({ products }) => {
   });
 
   return (
-    <tbody>
-      <tr>
-        <td>Name</td>
-        <td>Price</td>
-      </tr>
-      {row}
-    </tbody>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Price</td>
+        </tr>
+      </thead>
+      <tbody>{row}</tbody>
+    </table>
   );
 };
 
