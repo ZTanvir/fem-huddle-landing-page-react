@@ -7,9 +7,11 @@ const ProductTable = ({ products }) => {
 
   products.forEach((product) => {
     if (product.category !== lastCategory) {
-      row = row.concat(<ProductCategory category={product.category} />);
+      row = row.concat(
+        <ProductCategory key={product.category} category={product.category} />
+      );
     }
-    row = row.concat(<ProductRow product={product} />);
+    row = row.concat(<ProductRow key={product.name} product={product} />);
     lastCategory = product.category;
   });
 

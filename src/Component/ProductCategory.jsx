@@ -1,7 +1,7 @@
 const ProductCategory = ({ category }) => {
   return (
     <tr>
-      <td colspan="2">{category}</td>
+      <td colSpan="2">{category}</td>
     </tr>
   );
 };
